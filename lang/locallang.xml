@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<T3locallang>
+    <meta type="array">
+        <type>module</type>
+        <description>Language labels for extension 'jb_realurl_regeneration'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="task.name">RealURL cleanup and regeneration</label>
+            <label index="task.description">A scheduler task to clean and rebuild the RealURL tables.</label>
+            <label index="task.fields.TSFE_page_id">A valid page id in the Front End.</label>
+            <label index="task.fields.tablesToTruncate">Truncate more tables like caches_*. 
+						cache_extensions,cache_hash,cache_imagesizes,
+						cache_md5params,cache_pages,cache_pagesection,
+						cache_sys_dmail_stat,cache_typo3temp_log</label>
+						
+        </languageKey>
+    </data>
+		
+</T3locallang>

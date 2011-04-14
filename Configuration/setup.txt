@@ -1,0 +1,7 @@
+plugin.tx_jbrealurlregeneration_pi1 {
+
+	# pi1 disable delete tables capability for the plugin_pi1
+	# protect your page if you use the plugin in FE
+	disable_delete=1
+
+}
