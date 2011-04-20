@@ -85,8 +85,9 @@ class tx_jbrealurlregeneration_pi1 extends tslib_pibase {
 				'additionalParams' => '&tx_jbrealurlregeneration_pi1[deletetables]=1',
 				'parameter' => $GLOBALS['TSFE']->id,
 			);
-		$content .= '<h4>WARNING this link deletes some  tx_realurl_* tables > ' . $this->cObj->typolink('DELETE tables',$params). ' 
-		<br/>Protect this page or add plugin.tx_jbrealurlregeneration_pi1.disable_delete=1</h4>';	
+		$content .= '<h4>WARNING 1) This link deletes some  tx_realurl_* tables > ' . $this->cObj->typolink('DELETE tables',$params). ' 
+		<br/>Protect this page or add plugin.tx_jbrealurlregeneration_pi1.disable_delete=1. Chek the extension configuration</h4>
+		<h4>WARNING 2) You must be not logged in the Backend for generating the cache</h4>';	
 
 		// delete tables
 		if($deleteTables==1 && $conf['disable_delete']<>1){
