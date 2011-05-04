@@ -37,7 +37,7 @@ require_once(PATH_tslib.'class.tslib_pibase.php');
  
  * The cli/cron mode with Typo3 4.2.8 doesn't work
  * A fatal error is thrown when generating the typolin()
- * Fatal error: Call to a member function pageNotFoundAndExit() on a non-object in /ccv/data/www/typo3it/typo3conf/ext/realurl/class.tx_realurl.php on line 2411
+ * Fatal error: Call to a member function pageNotFoundAndExit() on a non-object in /typo3conf/ext/realurl/class.tx_realurl.php on line 2411
  *  
  */
 class tx_jbrealurlregeneration_lib extends tslib_pibase {
