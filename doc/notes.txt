@@ -1,0 +1,15 @@
+
+2011.04 The cron is not working with realUrl
+	Error: Fatal error: Call to a member function pageNotFoundAndExit() on a non-object in PATH/typo3conf/ext/realurl/class.tx_realurl.php on line 2457
+	realUrl 1.10.0 and Typo3 4.2.8
+	In in CLI mode the host is empty and for multidomaine realUrl can't retrieve the root_id
+	Solution: make a hook for ['TYPO3_CONF_VARS']['EXTCONF']['realurl']['getHost']
+	Solution 2: check how the Scheduler instantiate the objects
+	Correction: In realUrl: pObj is missing in  class.tx_realurl.php->encodeSpURL() used in adjustRootPageId()
+		// DSI CHANGE add set  for CLI
+		// Setting parent object reference (which is $GLOBALS['TSFE'])
+		$this->pObj = &$GLOBALS['TSFE'];
+		// Initializing config / request URL:
+		$this->setConfig();
+		$this->adjustConfigurationByHost('encode');
+		// DSI CHANGE add set for CLI END

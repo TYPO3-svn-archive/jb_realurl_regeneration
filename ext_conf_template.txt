@@ -1,0 +1,11 @@
+# cat=basic//00; type=input; label=CLI - TSFE page id: A valid page id used in Front End (used by the standalone CLI script)
+TSFE_page_id = 1
+# cat=basic//00; type=input; label=CLI - HOST: Set the host used by the standalone CLI script
+CLI_HOST = domain.ch
+
+# cat=basic//00; type=input; label=Tables to generate: Enter tables in csv with no space mode
+tablesToGenerate = pages,tt_news,tt_products
+# cat=basic//00; type=boolean; label=Delete tables tx_realurl_uniqalias: uniqalias table has the path for tt_news or tt_produtcs
+deleteUniqAlias = 0
+# cat=basic//00; type=input; label=Specific tables to clear in table tx_realurl_uniqalias: If deleteUniqAlias=0 enter csv with no space like tt_news,tt_products
+deleteUniqAliasTables = tt_news

@@ -1,0 +1,21 @@
+(add new changes on top of this file)
+
+
+11-09-08 Jean-Luc Thirot
+
+	* 3.2.2
+	* Add realUrlCleanUp parameter for the scheduler if realUrlCleanUp <> 1 Then realUrl Tables are not cleaned and regenerated
+
+11-08-30 Jean-Luc Thirot
+
+	* 3.2.1
+	* Correct bug with olderThan and delete tables
+
+11-08-30 Jean-Luc Thirot
+
+	* 3.2.0 
+	* Add olderThan for the tables with a timestamp
+
+05-09-15 Jan Bednarik  <info@bednarik.org>
+
+	* Initial release
